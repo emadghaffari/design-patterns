@@ -1,7 +1,6 @@
 package factory
 
 import (
-	"fmt"
 	"os"
 
 	"github.gom/emadghaffari/design-patterns/strategy/package/strategy"
@@ -41,6 +40,10 @@ func NewPrint(s string) (strategy.PrintStrategy, error) {
 			},
 		}, nil
 	default:
-		return nil, fmt.Errorf("error in factory")
+		return &shapes.TextSquare{
+			PrintOutPut: strategy.PrintOutPut{
+				LogWriter: os.Stdout,
+			},
+		}, nil
 	}
 }
