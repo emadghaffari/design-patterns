@@ -23,6 +23,7 @@ func TestMain(m *testing.M) {
 	switch *output {
 	case factory.TextStrategy:
 		strategy.SetWriter(os.Stdout)
+		strategy.Print()
 	case factory.ImageStrategy:
 		img, err := os.Create(imagePath)
 		if err != nil {
@@ -48,4 +49,29 @@ func TestMain(m *testing.M) {
 
 	}
 
+}
+
+// ExampleMain
+func ExampleMain() {
+	flag.Parse()
+	strategy, err := factory.NewPrint(*output)
+	if err != nil {
+		log.Fatalln(err.Error())
+	}
+	strategy.SetWriter(os.Stdout)
+	strategy.Print()
+	// Output:
+	// circle
+}
+
+func BenchmarkMain(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		flag.Parse()
+		strategy, err := factory.NewPrint(*output)
+		if err != nil {
+			log.Fatalln(err.Error())
+		}
+		strategy.SetWriter(os.Stdout)
+		strategy.Print()
+	}
 }
