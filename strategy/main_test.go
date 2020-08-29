@@ -4,17 +4,17 @@ import (
 	"flag"
 	"log"
 	"os"
+	"testing"
 
 	"github.gom/emadghaffari/design-patterns/strategy/package/factory"
 )
 
-var output = flag.String("output", "console", "the out put can text, image or pdf")
-var imagePath = "/workspaces/Golang/design-patterns/strategy/image.jpg"
-var pdfPath = "/workspaces/Golang/design-patterns/strategy/pdf.pdf"
-
-func main() {
+// TestMain func
+// go test -run '' -output=text
+// go test -run '' -output=image
+// go test -run '' -output=file
+func TestMain(m *testing.M) {
 	flag.Parse()
-
 	strategy, err := factory.NewPrint(*output)
 	if err != nil {
 		log.Fatalln(err.Error())
@@ -30,11 +30,22 @@ func main() {
 		}
 		defer img.Close()
 		strategy.SetWriter(img)
+		strategy.Print()
+
+		if _, err := os.Stat(imagePath); os.IsNotExist(err) {
+			log.Fatalln("the file not Exist: ", err.Error())
+		}
 	case factory.PdfStrategy:
 		strategy.SetWriter(os.Stdout)
+		strategy.Print()
+
+		if _, err := os.Stat(pdfPath); os.IsNotExist(err) {
+			log.Fatalln("the file not Exist: ", err.Error())
+		}
 	default:
 		strategy.SetWriter(os.Stdout)
+		strategy.Print()
+
 	}
 
-	strategy.Print()
 }
