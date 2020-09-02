@@ -39,8 +39,6 @@ Factory Method is a creational design pattern that provides an interface for cre
 
 >After a while, your app becomes pretty popular. Each day you receive dozens of requests from sea transportation companies to incorporate sea logistics into the app.
 
-
-
 ## Prototype
 Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 
@@ -52,3 +50,8 @@ Prototype is a creational design pattern that lets you copy existing objects wit
 Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
 > Imagine a complex object that requires laborious, step-by-step initialization of many fields and nested objects. Such initialization code is usually buried inside a monstrous constructor with lots of parameters. Or even worse: scattered all over the client code.
+
+## Bridge
+Bridge is a structural design pattern that divides business logic or huge class into separate class hierarchies that can be developed independently.
+
+> The Bridge pattern is especially useful when supporting multiple types of database servers or working with several API providers of a certain kind (for example, cloud platforms, social networks, etc.)
