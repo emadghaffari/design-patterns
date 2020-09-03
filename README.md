@@ -55,3 +55,8 @@ Builder is a creational design pattern that lets you construct complex objects s
 Bridge is a structural design pattern that divides business logic or huge class into separate class hierarchies that can be developed independently.
 
 > The Bridge pattern is especially useful when supporting multiple types of database servers or working with several API providers of a certain kind (for example, cloud platforms, social networks, etc.)
+
+## Proxy
+Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+
+> The Proxy pattern suggests that you create a new proxy class with the same interface as an original service object. Then you update your app so that it passes the proxy object to all of the original object’s clients. Upon receiving a request from a client, the proxy creates a real service object and delegates all the work to it.
