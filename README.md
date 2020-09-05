@@ -60,3 +60,13 @@ Bridge is a structural design pattern that divides business logic or huge class 
 Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
 
 > The Proxy pattern suggests that you create a new proxy class with the same interface as an original service object. Then you update your app so that it passes the proxy object to all of the original object’s clients. Upon receiving a request from a client, the proxy creates a real service object and delegates all the work to it.
+
+## Decorator
+Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+
+> Imagine that you’re working on a notification library which lets other programs notify their users about important events.
+![Uploading Screenshot from 2020-09-05 22-13-50.png…
+![Screenshot from 2020-09-05 22-14-00](https://user-images.githubusercontent.com/40004321/92311652-1736f300-efce-11ea-9872-866058a91709.png)
+![Screenshot from 2020-09-05 22-14-34](https://user-images.githubusercontent.com/40004321/92311653-1b631080-efce-11ea-8dd6-baec2a0db0b9.png)
+
+]()
