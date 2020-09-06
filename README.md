@@ -69,3 +69,7 @@ Decorator is a structural design pattern that lets you attach new behaviors to o
 ![Screenshot from 2020-09-05 22-14-00](https://user-images.githubusercontent.com/40004321/92311886-7d247a00-efd0-11ea-9813-1237a1ccdec3.png)
 ![Screenshot from 2020-09-05 22-14-34](https://user-images.githubusercontent.com/40004321/92311888-81e92e00-efd0-11ea-94fe-edfac0260b49.png)
 
+## Facade
+Facade Pattern is classified as a structural design pattern. This design pattern is meant to hide the complexities of the underlying system and provide a simple interface to the client. It provides a unified interface to underlying many interfaces in the system so that from the client perspective it is easier to use. Basically it provides a higher level abstraction over a complicated system.
+
+> Imagine that you must make your code work with a broad set of objects that belong to a sophisticated library or framework. Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on.
