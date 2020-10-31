@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.gom/emadghaffari/design-patterns/factory/packages"
+	"github.com/emadghaffari/design-patterns/factory/packages"
 )
 
 func main() {

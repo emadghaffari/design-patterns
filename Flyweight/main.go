@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/Emadghaffari/design-patterns/flyweight/packages"
+	"github.com/emadghaffari/design-patterns/Flyweight/packages"
 )
 
 func main() {

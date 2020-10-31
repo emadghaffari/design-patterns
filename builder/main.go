@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.gom/emadghaffari/design-patterns/builder/packages"
+	"github.com/emadghaffari/design-patterns/builder/packages"
 )
 
 func main() {
