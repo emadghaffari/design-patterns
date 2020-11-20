@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.gom/emadghaffari/design-patterns/strategy/shapes"
+	"github.com/emadghaffari/design-patterns/strategy/shapes"
 )
 
 func TestNewPrint(t *testing.T) {

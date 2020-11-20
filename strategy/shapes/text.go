@@ -1,8 +1,6 @@
 package shapes
 
-import (
-	"github.gom/emadghaffari/design-patterns/strategy/package/strategy"
-)
+import "github.gom/emadghaffari/design-patterns/strategy/package/strategy"
 
 // TextSquare struct
 type TextSquare struct {

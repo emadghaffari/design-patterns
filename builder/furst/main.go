@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/emadghaffari/design-patterns/builder/packages"
+	"github.com/emadghaffari/design-patterns/builder/furst/packages"
 )
 
 func main() {

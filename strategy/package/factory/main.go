@@ -3,8 +3,8 @@ package factory
 import (
 	"os"
 
-	"github.gom/emadghaffari/design-patterns/strategy/package/strategy"
-	"github.gom/emadghaffari/design-patterns/strategy/shapes"
+	"github.com/emadghaffari/design-patterns/strategy/package/strategy"
+	"github.com/emadghaffari/design-patterns/strategy/shapes"
 )
 
 // textStrategy const

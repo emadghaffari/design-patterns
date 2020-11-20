@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.gom/emadghaffari/design-patterns/strategy/package/factory"
+	"github.com/emadghaffari/design-patterns/strategy/package/factory"
 )
 
 var output = flag.String("output", "console", "the out put can text, image or pdf")
